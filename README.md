@@ -1,31 +1,43 @@
-Natural Language to SQL Streamlit Application
-Project Overview
-This project is a Streamlit web application that translates natural language queries into SQL queries using OpenAI's GPT model. It enables users to interact with a SQL database more intuitively without needing to know SQL syntax. The application automatically converts the input from natural language to SQL, executes the query on a local SQL database, and displays the results.
+# Natural Language to SQL Streamlit App
 
-Features
-Natural Language Understanding: Converts user input from natural language to SQL queries.
-Local Database Interaction: Executes queries on a local SQL database and displays results.
-Log Queries: Maintains a log of all queries and their results for auditing purposes.
-Installation
-Prerequisites
-Python 3.6 or newer
-A local SQL Server database
-An OpenAI API key
-Steps
-Clone this repository to your local machine:
+## Description
+This project is a Streamlit web application that translates natural language queries into SQL queries using OpenAI's GPT-3 model and executes them on a local SQL database. It's designed to simplify database interactions, making it easier for users without deep SQL knowledge to retrieve data using natural language.
 
+## Features
+- Natural language understanding to generate SQL queries.
+- Execution of SQL queries on a local SQL database.
+- Display of query results within the Streamlit UI.
+- Logging of queries and results for auditing purposes.
+
+## Installation
+
+### Prerequisites
+- Python 3.8+
+- An OpenAI API key
+- A local SQL database (SQL Server)
+- ODBC driver for your SQL database
+
+### Setup
+
+1. Clone this repository:
 git clone https://github.com/yourusername/openai-nl-to-sql-streamlit.git
-Navigate into the project directory:
 
+2. Navigate to the project directory:
 cd openai-nl-to-sql-streamlit
-Install required Python libraries:
+
+3. Install required Python packages:
 pip install -r requirements.txt
-Create a .env file based on the .env.example template with your actual configuration values.
-Usage
-To run the Streamlit application:
 
+4. Configure your `.env` file based on the `.env.example` provided in the repository. Update the `OPENAI_API_KEY` and `LOCAL_SQL_CONNECTION_STRING` with your details.
+
+### Running the Application
+
+1. Start the Streamlit app:
 streamlit run app.py
-Enter your natural language query into the text input on the Streamlit interface and click the 'Convert and Execute' button to see the SQL query and its results.
 
-Configuration
-Ensure your .env file is set up correctly as per the .env.example file. It should contain your OpenAI API key and local SQL connection string.
+2. Open your web browser and go to the address shown in the terminal to interact with the application.
+
+## Usage
+- Upon launching the app, you'll see a text input where you can type your natural language query.
+- After inputting your query, click the "Convert and Execute" button. The app will display the generated SQL query and the results of its execution.
+
