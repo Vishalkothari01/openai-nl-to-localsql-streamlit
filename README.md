@@ -1,4 +1,4 @@
-# Natural Language to SQL Streamlit App
+# Natural Language to SQL Streamlit App using OpenAI's GPT-3 model
 
 ## Description
 This project is a Streamlit web application that translates natural language queries into SQL queries using OpenAI's GPT-3 model and executes them on a local SQL database. It's designed to simplify database interactions, making it easier for users without deep SQL knowledge to retrieve data using natural language.
